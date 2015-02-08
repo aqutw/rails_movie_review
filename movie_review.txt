@@ -1,0 +1,1 @@
+17:54 --- batch update database value with ruby code in rails console
