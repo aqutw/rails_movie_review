@@ -42,14 +42,13 @@
         <% if @reviews.blank? %>
           <h3>No reviews~</h3>
           <%= link_to "Write Review", new_movie_review_path(@movie), class: "btn btn-danger" %>
-        <% else %>
+        <% end %>
           <% @reviews.each do |r| %>
             <div class="reviews">
               <div class="star-rating" data-score="<%= r.rating %>"></div>
               <p><%= r.comment %></p>
             </div>
           <% end %>
-        <% end %>
       </div>
     </div>
   </div>
