@@ -75,3 +75,6 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+####for paperclip
+public/system/movies/images
