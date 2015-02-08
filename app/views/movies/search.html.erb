@@ -1,0 +1,8 @@
+<div class="row">
+  <% @movies.each do |m| %>
+    <div class="col-sm-6 col-md-3">
+      <%= link_to (image_tag m.image.url(:medium), class: 'image'), m %>
+      <div><%= m.title %></div>
+    </div>
+  <% end %>
+</div>
